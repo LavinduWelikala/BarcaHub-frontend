@@ -1,38 +1,185 @@
-.App {
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #2d4d7f, #1d3a4f);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ba0a2e;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/* Home Page Styles */
+.hero-section {
+  background: url('https://via.placeholder.com/1500x500?text=Barca+Hub+Hero') no-repeat center center/cover;
+  padding: 80px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-section p {
+  font-size: 1.2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info-cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  background-color: #fff;
+  color: #1d3a4f;
+  width: 30%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 1.1em;
+}
+
+/* Matches Page Styles */
+.matches {
+  padding: 40px;
+  text-align: center;
+}
+
+.matches h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.match-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.match-card {
+  background-color: #fff;
+  color: #1d3a4f;
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.match-card h2 {
+  font-size: 1.8em;
+  color: #ba0a2e;
+  margin-bottom: 15px;
+}
+
+.match-card p {
+  font-size: 1.1em;
+}
+
+/* Players Page Styles */
+.players {
+  padding: 40px;
+  text-align: center;
+}
+
+.players h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.player-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.player-card {
+  background-color: #fff;
+  color: #1d3a4f;
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.player-card img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.player-card h2 {
+  font-size: 1.8em;
+  color: #ba0a2e;
+  margin-bottom: 10px;
+}
+
+.player-card p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.stats p {
+  font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ba0a2e;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
 }
