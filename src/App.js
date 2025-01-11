@@ -1,20 +1,22 @@
-import React from 'react';
-import './App.css'; // Custom styles
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import Routes instead of Switch
-import Home from './components/Home';
-import Matches from './components/Matches';
-import Players from './components/Players';
-import Navbar from './components/Navbar';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import Matches from "./components/Matches";
+import Players from "./components/Players";
+import Navbar from "./components/Navbar";
+import CreateClub from "./components/CreateClub"; // Import CreateClub component
 
 const App = () => {
   return (
     <Router>
       <div className="app">
         <Navbar />
-        <Routes> {/* Use Routes instead of Switch */}
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/matches" element={<Matches />} />
           <Route path="/players" element={<Players />} />
+          <Route path="/create-club" element={<CreateClub />} /> {/* New Route */}
         </Routes>
       </div>
     </Router>

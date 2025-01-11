@@ -41,6 +41,82 @@ body {
   font-weight: 600;
 }
 
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Create Club Styles */
+.create-club {
+  background-color: #fff;
+  color: #1d3a4f;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-club h1 {
+  text-align: center;
+  color: #ba0a2e;
+  margin-bottom: 20px;
+}
+
+.create-club form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-club label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1d3a4f;
+}
+
+.create-club input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+.create-club input:focus {
+  border-color: #ba0a2e;
+  box-shadow: 0 0 5px rgba(186, 10, 46, 0.5);
+}
+
+.create-club button {
+  background-color: #ba0a2e;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.create-club button:hover {
+  background-color: #8e0722;
+}
+
+.create-club .message {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.create-club .message.success {
+  color: green;
+}
+
+.create-club .message.error {
+  color: red;
+}
+
 /* Home Page Styles */
 .hero-section {
   background: url('https://via.placeholder.com/1500x500?text=Barca+Hub+Hero') no-repeat center center/cover;
