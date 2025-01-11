@@ -252,6 +252,130 @@ body {
   font-weight: bold;
 }
 
+/* General Form Container */
+.form-container {
+  background-color: #fff;
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form Title */
+.form-container h1 {
+  font-size: 1.8em;
+  color: #ba0a2e;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1em;
+  color: #333;
+}
+
+form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit Button */
+form button {
+  background-color: #ba0a2e;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #a00929;
+}
+
+/* General Stadium Styles */
+.stadiums {
+  padding: 40px;
+  text-align: center;
+}
+
+.stadiums h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #ba0a2e;
+}
+
+/* Form Container */
+.stadium-form-container {
+  background-color: #fff;
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form Title */
+.stadium-form-container h1 {
+  font-size: 1.8em;
+  color: #ba0a2e;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.stadium-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stadium-form label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 1em;
+  color: #333;
+}
+
+.stadium-form input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Submit Button */
+.stadium-form button {
+  background-color: #ba0a2e;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stadium-form button:hover {
+  background-color: #a00929;
+}
+
 /* Footer Styles */
 footer {
   background-color: #ba0a2e;
