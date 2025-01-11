@@ -5,7 +5,8 @@ import Home from "./components/Home";
 import Matches from "./components/Matches";
 import Players from "./components/Players";
 import Navbar from "./components/Navbar";
-import CreateClub from "./components/CreateClub"; // Import CreateClub component
+import CreateClub from "./components/CreateClub";
+import Stadium from "./components/Stadium";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/matches" element={<Matches />} />
           <Route path="/players" element={<Players />} />
-          <Route path="/create-club" element={<CreateClub />} /> {/* New Route */}
+          <Route path="/create-club" element={<CreateClub />} />
+          <Route path="/create-stadium" element={<Stadium />} />
         </Routes>
       </div>
     </Router>

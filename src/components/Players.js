@@ -1,5 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Player = () => {
   const [formData, setFormData] = useState({
@@ -8,10 +10,8 @@ const Player = () => {
     position: "",
     nationality: "",
     jerseyNumber: "",
-
+    
   });
-
-  const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,32 +23,24 @@ const Player = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     try {
-      const response = await axios.post("http://localhost:8080/players", formData);
-      setMessage("Player created successfully!");
+      await axios.post("http://localhost:8080/players", formData);
+      toast.success("Player created successfully!", { autoClose: 3000 });
       setFormData({
         name: "",
         age: "",
         position: "",
         nationality: "",
         jerseyNumber: "",
-
       });
-
-
     } catch (error) {
-      if (error.response && error.response.data) {
-        setMessage(error.response.data.message || "Error creating Player.");
-      } else {
-        setMessage("Error connecting to the server");
-      }
+      toast.error("Error creating player.", { autoClose: 3000 });
     }
   };
 
   return (
-    <div>
-      <h1>Players</h1>
+    <div className="form-container">
+      <h1>Add a New Player</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Name:
@@ -68,11 +60,11 @@ const Player = () => {
         </label>
         <label>
           Jersey Number:
-          <input type="text" name="jerseyNumber" value={formData.jerseyNumber} onChange={handleChange} />
+          <input type="number" name="jerseyNumber" value={formData.jerseyNumber} onChange={handleChange} />
         </label>
         <button type="submit">Create Player</button>
       </form>
-      <p>{message}</p>
+      <ToastContainer />
     </div>
   );
 };
