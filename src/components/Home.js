@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -19,6 +20,10 @@ const Home = () => {
         <div className="card">
           <h2>Top Players</h2>
           <p>Explore the profiles of your favorite players.</p>
+          {/* Link to the PlayerList page */}
+          <Link to="/players-list" className="button">
+            View Top Players
+          </Link>
         </div>
       </div>
     </div>

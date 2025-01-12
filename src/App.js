@@ -7,6 +7,7 @@ import Players from "./components/Players";
 import Navbar from "./components/Navbar";
 import CreateClub from "./components/CreateClub";
 import Stadium from "./components/Stadium";
+import PlayerList from "./components/PlayerList";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/players" element={<Players />} />
           <Route path="/create-club" element={<CreateClub />} />
           <Route path="/create-stadium" element={<Stadium />} />
+          <Route path="/players-list" element={<PlayerList />} />
         </Routes>
       </div>
     </Router>

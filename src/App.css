@@ -378,6 +378,24 @@ form button:hover {
   background-color: #a00929;
 }
 
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
 /* Footer Styles */
 footer {
   background-color: #ba0a2e;
