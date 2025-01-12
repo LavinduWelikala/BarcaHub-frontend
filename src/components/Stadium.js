@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const Stadium = () => {
 
@@ -25,7 +26,7 @@ const Stadium = () => {
 
     try {
       const response = await axios.post("http://localhost:8080/stadiums", formData);
-      setMessage("Stadium created successfully!");
+      toast.success("Stadium created successfully!", { autoClose: 3000 });
       setFormData({
         name: "",
         capacity: "",
@@ -42,8 +43,8 @@ const Stadium = () => {
 
     return (
 
-        <div className="create-stadium">
-            <h2>Create Stadium</h2>
+        <div className="stadium-form-container">
+            <h1>Create Stadium</h1>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
@@ -75,6 +76,7 @@ const Stadium = () => {
                 <button type="submit">Create Stadium</button>
             </form>
             {message && <p>{message}</p>}
+            <ToastContainer />
         </div>          
     );    
 };
