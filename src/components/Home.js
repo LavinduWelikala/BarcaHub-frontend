@@ -25,6 +25,14 @@ const Home = () => {
             View Top Players
           </Link>
         </div>
+        <div className="card">
+          <h2>Best Clubs</h2>
+          <p>Explore the world's best clubs.</p>
+          {/* Link to the ClubList page */}
+          <Link to="/clubs-list" className="button">
+            View Top Players
+          </Link>
+        </div>
       </div>
     </div>
   );

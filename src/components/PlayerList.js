@@ -55,7 +55,7 @@ const PlayerList = () => {
         >
           <thead>
             <tr style={{ backgroundColor: "#f4f4f4", textAlign: "left" }}>
-              {/* <th style={thStyle}>Player ID</th> */}
+              <th style={thStyle}>Player ID</th>
               <th style={thStyle}>Name</th>
               <th style={thStyle}>Age</th>
               <th style={thStyle}>Position</th>
@@ -72,7 +72,7 @@ const PlayerList = () => {
                   textAlign: "left",
                 }}
               >
-                {/* <td style={tdStyle}>{player.playerId}</td> */}
+                <td style={tdStyle}>{player.playerId}</td>
                 <td style={tdStyle}>{player.name}</td>
                 <td style={tdStyle}>{player.age}</td>
                 <td style={tdStyle}>{player.position}</td>
