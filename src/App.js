@@ -9,6 +9,7 @@ import CreateClub from "./components/CreateClub";
 import Stadium from "./components/Stadium";
 import PlayerList from "./components/PlayerList";
 import ClubList from "./components/ClubList";
+import PlayerTable from "./components/PlayerTable";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/create-stadium" element={<Stadium />} />
           <Route path="/players-list" element={<PlayerList />} />
           <Route path="/clubs-list" element={<ClubList />} />
+          <Route path="/player-table" element={<PlayerTable /> } />
         </Routes>
       </div>
     </Router>

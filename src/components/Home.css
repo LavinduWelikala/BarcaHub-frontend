@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Home Component Styles */
+  .home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: linear-gradient(to bottom right, #003087, #a50044);
+    color: white;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+  }
+  
+  /* Info Cards Section */
+  .info-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    color: #003087;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #a50044;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #003087;
+  }
+  
