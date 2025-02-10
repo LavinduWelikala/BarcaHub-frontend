@@ -89,7 +89,7 @@ const PlayerTable = () => {
         }
 
         .player-table th {
-          background-color: #4CAF50;
+          background-color:rgb(62, 180, 66);
           color: white;
         }
 
